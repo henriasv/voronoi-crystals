@@ -4,6 +4,7 @@ Python package to create polycrystals by voronoi tesselation
 (The code actually performing the voronoi tesselation has been moved from ComputatonalPhysics/lammps-utilities to here 29th June 2019.)
 
 ## Installation 
+The troubles of making python work with pyvoro and glumpy (which this package depends upon) are not addressed here, so the command below only works if all required packages are already installed. 
 ```
 pip install git+https://github.com/henriasv/voronoi-crystals
 ```
