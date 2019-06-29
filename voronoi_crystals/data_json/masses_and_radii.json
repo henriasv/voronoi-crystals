@@ -1,0 +1,27 @@
+{
+    "silicon": {
+        "mass": 28.08,
+        "radius": 1,
+        "color" : [0,1,1]
+    },
+    "methane": {
+        "mass": 16.04,
+        "radius": 1.2,
+        "color" : [0,1,1]
+    },
+    "water": {
+        "mass": 18.0154,
+        "radius": 0.8,
+        "color" : [0,1,1]
+    },
+    "oxygen": {
+        "mass": 15.9994,
+        "radius": 0.6,
+        "color" : [0,1,1]
+    },
+    "copper": {
+        "mass": 63.546,
+        "radius": 1.6,
+        "color" : [0,1,1]
+    }
+}

@@ -1,0 +1,19 @@
+units		real
+dimension 	3
+boundary 	p p p
+atom_style 	atomic
+pair_style 	sw
+
+timestep 10.0
+
+read_data test.data
+
+pair_coeff * * water_methane_hydrate.sw O C
+
+group water 	type 	1
+group methane 	type 	2
+
+
+minimize 1e-4 1e-4 1000 1000
+
+write_data minimized.data
