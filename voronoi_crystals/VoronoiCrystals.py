@@ -106,7 +106,7 @@ class Polycrystal:
 		isInsideCell = self.insideSystemBoxAroundPoint(cellNum, points)
 		for adjacentCell in adjacentCells:
 			otherDistance = self.periodicSqDistance(p1, self.voronoiCenters[adjacentCell])
-			isInsideCell = np.logical_and(isInsideCell, (otherDistance-selfDistance)>100)
+			isInsideCell = np.logical_and(isInsideCell, (np.sqrt(otherDistance)-np.sqrt(selfDistance))>1)
 		return isInsideCell
 
 
